@@ -7,6 +7,8 @@ namespace EmployeeWageComputation
         static void Main(string[] arg)
         {
             Console.WriteLine("Welcome to Employee Wage Computation Program");
+            EmpPresentAbsent empPresentAbsent = new EmpPresentAbsent();
+            empPresentAbsent.PresentAbsent(); 
         }
     }
 }
