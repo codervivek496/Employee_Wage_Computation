@@ -14,6 +14,7 @@ namespace EmployeeWageComputation
                 Console.WriteLine("1. Check Employee is present is OR Absent");
                 Console.WriteLine("2. Calculate daily Employee Wages");
                 Console.WriteLine("3. Part time Employee and Wages");
+                Console.WriteLine("4. Part time USing Switch statement");
                 Console.WriteLine("0: Exit");
                 choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
@@ -29,6 +30,10 @@ namespace EmployeeWageComputation
                     case 3:
                         PartTimeEmp partTimeEmp = new PartTimeEmp();
                         partTimeEmp.Parttime();
+                        break;
+                    case 4:
+                        PartTimeUsingSwitch partTimeUsingSwitch = new PartTimeUsingSwitch();
+                        partTimeUsingSwitch.ParttimeSwitch();
                         break;
                 }
             }while(choice != 0);
