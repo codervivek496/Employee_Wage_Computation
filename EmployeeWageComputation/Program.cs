@@ -15,6 +15,7 @@ namespace EmployeeWageComputation
                 Console.WriteLine("2. Calculate daily Employee Wages");
                 Console.WriteLine("3. Part time Employee and Wages");
                 Console.WriteLine("4. Part time USing Switch statement");
+                Console.WriteLine("5. Employee wages for a month");
                 Console.WriteLine("0: Exit");
                 choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
@@ -34,6 +35,10 @@ namespace EmployeeWageComputation
                     case 4:
                         PartTimeUsingSwitch partTimeUsingSwitch = new PartTimeUsingSwitch();
                         partTimeUsingSwitch.ParttimeSwitch();
+                        break;
+                    case 5:
+                        WagesForMonth wagesForMonth = new WagesForMonth();
+                        wagesForMonth.WageMonth();
                         break;
                 }
             }while(choice != 0);
