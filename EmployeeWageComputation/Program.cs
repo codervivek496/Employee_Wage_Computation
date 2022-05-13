@@ -16,6 +16,7 @@ namespace EmployeeWageComputation
                 Console.WriteLine("3. Part time Employee and Wages");
                 Console.WriteLine("4. Part time USing Switch statement");
                 Console.WriteLine("5. Employee wages for a month");
+                Console.WriteLine("6 Wages till a condition of total working hours or days is reached for a month");
                 Console.WriteLine("0: Exit");
                 choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
@@ -39,6 +40,10 @@ namespace EmployeeWageComputation
                     case 5:
                         WagesForMonth wagesForMonth = new WagesForMonth();
                         wagesForMonth.WageMonth();
+                        break;
+                    case 6:
+                        DayMonthCondition dayMonthCondition = new DayMonthCondition();
+                        dayMonthCondition.Condition();
                         break;
                 }
             }while(choice != 0);
