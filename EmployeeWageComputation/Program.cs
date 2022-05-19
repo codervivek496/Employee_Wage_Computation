@@ -20,6 +20,7 @@ namespace EmployeeWageComputation
                 Console.WriteLine("7. Class Method to Compute Employee Wage");
                 Console.WriteLine("8. Employee wage of multiple Companies");
                 Console.WriteLine("9 Ability to save the Total Wage for Each Company");
+                Console.WriteLine("10. Ability to Manage wage for multiple companies");
                 Console.WriteLine("0: Exit");
                 choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
@@ -59,6 +60,10 @@ namespace EmployeeWageComputation
                     case 9:
                         SaveTotalWages saveTotalWages = new SaveTotalWages();
                         saveTotalWages.SaveWage();
+                        break;
+                    case 10:
+                        ManageMultipleCompanies manage = new ManageMultipleCompanies();
+                        manage.ManageMultiple();
                         break;
                 }
             }while(choice != 0);
